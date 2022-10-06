@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E80EFCA28EF1DAD0046D690 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E80EFC928EF1DAD0046D690 /* MainViewController.swift */; };
+		7E80EFCC28EF1DC30046D690 /* FetchWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E80EFCB28EF1DC30046D690 /* FetchWeatherData.swift */; };
+		7E80EFCE28EF1DDC0046D690 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E80EFCD28EF1DDC0046D690 /* Weather.swift */; };
 		7EC3F07328EC848F00DE292A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3F07228EC848F00DE292A /* AppDelegate.swift */; };
 		7EC3F07528EC848F00DE292A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3F07428EC848F00DE292A /* SceneDelegate.swift */; };
-		7EC3F07728EC848F00DE292A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3F07628EC848F00DE292A /* ViewController.swift */; };
 		7EC3F07C28EC849000DE292A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EC3F07B28EC849000DE292A /* Assets.xcassets */; };
 		7EC3F07F28EC849000DE292A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC3F07D28EC849000DE292A /* LaunchScreen.storyboard */; };
 		8D0D469BE625BB8643929B63 /* Pods_Luna_hackathon_git.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED0FE20D8C872BF62CD425D7 /* Pods_Luna_hackathon_git.framework */; };
@@ -17,10 +19,12 @@
 
 /* Begin PBXFileReference section */
 		6CBDED1AB3F07ED33C3786E1 /* Pods-Luna_hackathon_git.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Luna_hackathon_git.release.xcconfig"; path = "Target Support Files/Pods-Luna_hackathon_git/Pods-Luna_hackathon_git.release.xcconfig"; sourceTree = "<group>"; };
+		7E80EFC928EF1DAD0046D690 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7E80EFCB28EF1DC30046D690 /* FetchWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWeatherData.swift; sourceTree = "<group>"; };
+		7E80EFCD28EF1DDC0046D690 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		7EC3F06F28EC848F00DE292A /* Luna_hackathon_git.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luna_hackathon_git.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC3F07228EC848F00DE292A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EC3F07428EC848F00DE292A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7EC3F07628EC848F00DE292A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7EC3F07B28EC849000DE292A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EC3F07E28EC849000DE292A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EC3F08028EC849000DE292A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +50,6 @@
 				A3886A7003A24D356512CC27 /* Pods-Luna_hackathon_git.debug.xcconfig */,
 				6CBDED1AB3F07ED33C3786E1 /* Pods-Luna_hackathon_git.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -61,6 +64,7 @@
 		7E80EFC528EF1C3C0046D690 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7E80EFCD28EF1DDC0046D690 /* Weather.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -68,6 +72,8 @@
 		7E80EFC628EF1C400046D690 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				7EC3F07228EC848F00DE292A /* AppDelegate.swift */,
+				7EC3F07428EC848F00DE292A /* SceneDelegate.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -75,6 +81,7 @@
 		7E80EFC728EF1C440046D690 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				7E80EFCB28EF1DC30046D690 /* FetchWeatherData.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -82,6 +89,7 @@
 		7E80EFC828EF1C480046D690 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				7E80EFC928EF1DAD0046D690 /* MainViewController.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -111,9 +119,6 @@
 				7E80EFC728EF1C440046D690 /* Service */,
 				7E80EFC628EF1C400046D690 /* Support */,
 				7E80EFC528EF1C3C0046D690 /* Model */,
-				7EC3F07228EC848F00DE292A /* AppDelegate.swift */,
-				7EC3F07428EC848F00DE292A /* SceneDelegate.swift */,
-				7EC3F07628EC848F00DE292A /* ViewController.swift */,
 				7EC3F07B28EC849000DE292A /* Assets.xcassets */,
 				7EC3F07D28EC849000DE292A /* LaunchScreen.storyboard */,
 				7EC3F08028EC849000DE292A /* Info.plist */,
@@ -235,9 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EC3F07728EC848F00DE292A /* ViewController.swift in Sources */,
 				7EC3F07328EC848F00DE292A /* AppDelegate.swift in Sources */,
 				7EC3F07528EC848F00DE292A /* SceneDelegate.swift in Sources */,
+				7E80EFCA28EF1DAD0046D690 /* MainViewController.swift in Sources */,
+				7E80EFCC28EF1DC30046D690 /* FetchWeatherData.swift in Sources */,
+				7E80EFCE28EF1DDC0046D690 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +388,6 @@
 				INFOPLIST_FILE = Luna_hackathon_git/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -409,7 +415,6 @@
 				INFOPLIST_FILE = Luna_hackathon_git/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
